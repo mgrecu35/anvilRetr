@@ -1,4 +1,5 @@
 ### Synergistic retrievals of ice in high clouds from lidar, Ku-band radar and submillimeter wave radiometer observations
+
 **_Mircea Grecu and John Yorks_**
 
 ### 1.Introduction ###
@@ -70,6 +71,8 @@ Shown in Figure 5 is frequency plot of the $IWC$ gravity centers estimated from 
 
 ![](./radiometerL_iwcGcHeight.png)
 Figure 5.  Same as in Figure 4, but with the top of the lidar echo included in the predictor list.
+
+![](./radiometerLr_iwcGcHeight.png)
 
 
 
