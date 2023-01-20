@@ -72,7 +72,7 @@ Shown in Figure 5 is frequency plot of the $IWC$ gravity centers estimated from 
 ![](./radiometerL_iwcGcHeight.png)
 Figure 5.  Same as in Figure 4, but with the top of the lidar echo included in the predictor list.
 
-![](./radiometerLr_iwcGcHeight.png)
+![](./radiometerLR_iwcGcHeight.png)
 Figure 5.  Same as in Figure 4, but with the top of the lidar echo and radar information included in the predictor list.
 
 
