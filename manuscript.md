@@ -64,7 +64,9 @@ Figure 4.  Same as in Figure 3, but for the $IWC$ gravity center.
 
 ### 3.2. Synergistic retrievals
 
+From the synergy of the instrument perspective, it is useful to investigate how information easily derivable from the active instrument observation can complement the submillimeter-wave radiometer observations. The top of the clouds derived from the lidar backscatter observations is such information. To incorporate it into the $IWC$ retrievals, we simply extend the dimension of the input by one entry that contains the lidar-based cloud top estimate. This additional piece of information makes the retrievals more specific by confining the set of potential matches to those that are consistent from the cloud top perspective with the lidar observations.
 
+Shown in Figure 5 is frequency plot of the $IWC$ gravity centers estimated from lidar and radiometer observations as a function of the true $IWC$ gravity centers. One may note in the figure a significant improvement relative to Figure 4.
 
 ![](./radiometerL_iwcGcHeight.png)
 Figure 5.  Same as in Figure 4, but with the top of the lidar echo included in the predictor list.
