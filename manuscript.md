@@ -15,12 +15,12 @@ $IWC=N_w^{1-b}aZ^b$
 
 perfectly explain the relationships between IWC and Z calculated from observed PSDs. Equation (1) is not sufficient to derive accurate, unbiased estimates of ice water contents, because $N_w$ varies considerably in time and space. Nevertheless, multiple studies showed that it is beneficial to parameterize $N_w$ as a function of temperature (e.g. Hogan et al. 2006; Delanoe and Hogan 2008; Deng et al. 2010).  In this study we parameterize $N_w$ as a function of temperature based on the CloudSat 2C-ICE product (Deng et al. 2010; Deng et al. 2013).  Specifically, we cluster, based on their similarity, a large set 2C-ICE profiles into 18 classes using a k-Means procedure. The mean IWC profiles associated with the 18 classes are shown in continuous lines in Fig. 1.  Alternative estimates, based on the PSD assumptions and electromagnetic scattering calculations that enable accurate and physically consistent simulations of radar observations at Ku-band and radiometer observations of submillimeter-wave frequencies are also shown in Fig. 2 (symbolized as SSRG). Details regarding the estimations process are provided in the subsequent paragraphs.  As apparent in Fig. 1, the CS and SSRG estimates are in good agreement.  Some discrepancies due to discrepancies in the SSRG $N_w$ parameterization and the CS 2C-ICE "a priori assumptions" are also apparent, but they are not deemed critical in this study, whose objective is the investigation of synergistic lidar, Ku-band radar and submillimeter-wave radiometer retrievals, because the outcome is not likely to be sensitive to such details.
 
-![Cloud and SSRG-based IWC retrievals clustered by distribution.](./iwcClassesSSRG_CS.png)
+![Cloud and SSRG-based IWC retrievals clustered by distribution.](./Figs/iwcClassesSSRG_CS.png)
 Fig.1 Conditional average IWC profiles for each of the 18 classes determined by the k-Means algorithm. The CS 2C-ICE profiles (Deng et al. 2013) are shown in continuous line, while the profiles derived in this are shown using the "*" symbol and referred to the SSRG estimates due to the use the self-similarity Rayleigh-Gans approximation (SSRGA) theory in the estimation process (see the text for details).  The relative height is defined relative to the freezing level.
 
  One may notice that the average IWC profiles in Fig.1 are characterized by different peak values and locations.  This facilitates a simple way to reverse-engineer to (some extent) the "a priori" assumptions used in the CS 2C-ICE product and use them in formulation of the type described in Eq. (1).  Specifically, the conditional derivation of relationships of the type $IWC=a_i Z^{b_i}$ for every class i and the representation of $a_i$ as a function of the height of class IWC peak. Shown in Fig. 2 is a relative height - $a_i$ scatter plot.  As apparent in the figure, and as expected, the $a_i$ exhibits a strong variation with the relative height. Coefficient $b_i$ exhibits a height dependency as well, but the range of variation is significantly smaller, almost zero relative to the mean value of $b$. Given that any deviation of the multiplicative coefficient in an IWC-Z relation from an average is equivalent to a deviation of the associated $N_w$ from its mean value (Testud et al. 2001), the relative height $a$ relationship may be converted into a relative-height $N_w$ relationship.  We, therefore, use the data in Fig. 2 to parameterize $N_w$ as a function of the relative height.
 
- ![](./iwcCoeff.png)
+ ![](./Figs/iwcCoeff.png)
 Fig. 2.
 
  For the determination of the reference $a$ and $b$ values, we assume that PSDs are normalized gamma distributions with $N_w=0.08cm^{-4}$ and $\mu=2$ and calculate 
@@ -54,15 +54,15 @@ A cross validation methodology is used for evaluation.  That is, the kNN regress
 ### 3.1. Radiometer-only retrievals
 As previously mentioned, submillimeter-wave radiometers are likely to provide by themselves more complete information about the total amount of ice in their observing volumes than lidars or Ku-band radars with limited sensitivity. However, radiometers observations are an integrated measure of radiative process in clouds that provide little information about the vertical distribution of ice. From this perspective, an evaluation in terms of the ice water path ($IWP$) defined as the vertical integral of the $IWC$, i.e. $IWP=\int_0^{Z_{top}}IWC(z)dz$ is insightful.  Shown in Figure 3 is a frequency contour plot of IWP estimated from radiometer-only observations their true values. As apparent in the figure, there is good correlation between the retrieved and the true IWP values. The numerical value of the correlation coefficient is 0.92, and there is no-overall bias. That is, the mean values of retrieved $IWP$ and true $IWP$ values are equal. However, conditional biases are apparent, with overestimation of $IWP$ for values smaller than 100 g/$m^2$ and some underestimation for values larger than 1000 g/$m^2$.  The biases at the low end of the $IWP$ range are not surprising, given that the impact caused by ice scattering on the total radiometric signal is small for low values of $IWP$ and hard to distinguished from other sources of variability in radiometer observations. Saturation effects are most likely responsible for underestimation at the high end.  It should be noted that in this evaluation, only atmospheric profiles that exhibit ice detectable by the CS radar are used. Therefore, a radiometer-only estimation procedure derived from this training dataset is likely to result in significant overestimation if not used in conjunction with a discrimination procedure. However, such procedure is not critical in this study, as the lidar observations may be used to discriminate between clear skies and ice clouds.
 
-![](./radiometer_iwpRetrieval_nadir.png)
+![](./Figs/radiometer_iwpRetrieval_nadir.png)
 Figure 3. Frequency plot of estimated IWP derived radiometer-observations as a function of the true IWP used in observations synthesis. 
 
-![](./iwcRetrievedKMeansClassesSSRG_Radiometer.png)
+![](./Figs/iwcRetrievedKMeansClassesSSRG_Radiometer.png)
 Figure 4. True and radiometer-only retrieved conditional mean IWC.
 
 To express the ability of the radiometer-only methodology to characterize the vertical distribution of ice in clouds in a simple way, we define the ice profile gravity center (GC) as $z_{GC}=\frac {\int_0^{Z_{top}}zIWC(z)dz} {\int_0^{Z_{top}}IWC(z)dz}$, where $z$ is the distance relative to the freezing level, the $Z_{top}$ is the distance from the top of the atmosphere to the freezing level.  The $IWC$ is estimated using the kNN regression described in section 2.2 and the estimated $z_{GC}$ is compared to the true $z_{GC}$.  Results are shown in Figure 4.  It may be observed in the figure that while the true $IWC$ gravity center exhibits quite a broad distribution, the one retrieved from the radiometer-only observations exhibits a narrow distribution. Moreover, there is almost no correlation between the retrieved and the true IWC gravity center.  This is an indication that, while the total amount of ice may be reasonably estimated from radiometer-only observations, its vertical distribution can not be determined from radiometer-only observations.
 
-![](./radiometerOnly_iwcGcHeight.png)
+![](./Figs/radiometerOnly_iwcGcHeight.png)
 Figure 5.  Same as in Figure 3, but for the $IWC$ gravity center.
 
 ### 3.2. Synergistic retrievals
@@ -71,13 +71,13 @@ From the synergy of the instrument perspective, it is useful to investigate how 
 
 Shown in Figure 5 is frequency plot of the $IWC$ gravity centers estimated from lidar and radiometer observations as a function of the true $IWC$ gravity centers. One may note in the figure a significant improvement relative to Figure 4.
 
-![](./radiometerLidarRadar_iwpRetrieval_nadir.png)
+![](./Figs/radiometerLidarRadar_iwpRetrieval_nadir.png)
 Figure 6. 
 
-![](./iwcRetrievedClassesSSRG.png)
+![](./Figs/iwcRetrievedClassesSSRG.png)
 Figure 7.  Same as in Figure 4, but with the top of the lidar echo included in the predictor list.
 
-![](./radiometerLidarRadar_iwcGcHeight.png)
+![](./Figs/radiometerLidarRadar_iwcGcHeight.png)
 Figure 8.  Same as in Figure 4, but with the top of the lidar echo and radar information included in the predictor list.
 
 
