@@ -57,12 +57,12 @@ As previously mentioned, submillimeter-wave radiometers are likely to provide by
 ![](./Figs/radiometer_iwpRetrieval_nadir.png)
 Figure 3. Frequency plot of estimated IWP derived radiometer-observations as a function of the true IWP used in observations synthesis. 
 
-![](./Figs/iwcRetrievedKMeansClassesSSRG_Radiometer.png)
+![](./Figs/iwcRetrievedClassesSSRGRadiometer.png)
 Figure 4. True and radiometer-only retrieved conditional mean IWC.
 
 To express the ability of the radiometer-only methodology to characterize the vertical distribution of ice in clouds in a simple way, we define the ice profile gravity center (GC) as $z_{GC}=\frac {\int_0^{Z_{top}}zIWC(z)dz} {\int_0^{Z_{top}}IWC(z)dz}$, where $z$ is the distance relative to the freezing level, the $Z_{top}$ is the distance from the top of the atmosphere to the freezing level.  The $IWC$ is estimated using the kNN regression described in section 2.2 and the estimated $z_{GC}$ is compared to the true $z_{GC}$.  Results are shown in Figure 4.  It may be observed in the figure that while the true $IWC$ gravity center exhibits quite a broad distribution, the one retrieved from the radiometer-only observations exhibits a narrow distribution. Moreover, there is almost no correlation between the retrieved and the true IWC gravity center.  This is an indication that, while the total amount of ice may be reasonably estimated from radiometer-only observations, its vertical distribution can not be determined from radiometer-only observations.
 
-![](./Figs/radiometerOnly_iwcGcHeight.png)
+![](./Figs/radiometer_iwcGcHeight.png)
 Figure 5.  Same as in Figure 3, but for the $IWC$ gravity center.
 
 ### 3.2. Synergistic retrievals
@@ -79,6 +79,11 @@ Figure 7.  Same as in Figure 4, but with the top of the lidar echo included in t
 
 ![](./Figs/radiometerLidarRadar_iwcGcHeight.png)
 Figure 8.  Same as in Figure 4, but with the top of the lidar echo and radar information included in the predictor list.
+
+|Score| Radar -Radiometer | Lidar-Radar-Radiometer|
+|-----|--------------|-----------------------|
+|NRMS |0.59| 0.22
+|Acurracy
 
 
 ### _References_ ###
