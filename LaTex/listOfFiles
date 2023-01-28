@@ -1,0 +1,9 @@
+    \includegraphics[width=0.75\textwidth,angle=0]{./Figs/iwcClassesSSRG_CS.png}\\
+    \includegraphics[width=0.75\textwidth,angle=0]{./Figs/iwcCoeff.png}\\
+    \includegraphics[width=0.75\textwidth,angle=0]{./Figs/obsCFADs.png}\\
+    \includegraphics[width=0.75\textwidth,angle=0]{./Figs/radiometer_iwpRetrieval_nadir.png}\\
+    \includegraphics[width=0.75\textwidth,angle=0]{./Figs/iwcRetrievedClassesSSRGRadiometer.png}\\
+    \includegraphics[width=0.75\textwidth,angle=0]{./Figs/radiometer_iwcGcHeight.png}\\
+    \includegraphics[width=0.75\textwidth,angle=0]{./Figs/radiometerLidarRadar_iwpRetrieval_nadir.png}\\
+    \includegraphics[width=0.75\textwidth,angle=0]{./Figs/iwcRetrievedClassesSSRG.png}\\
+    \includegraphics[width=0.75\textwidth,angle=0]{./Figs/radiometerLidarRadar_iwcGcHeight.png}\\

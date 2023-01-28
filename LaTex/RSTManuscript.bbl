@@ -1,0 +1,32 @@
+\begin{thebibliography}{4}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\renewcommand{\UrlFont}{\rmfamily}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{https://doi.org/\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{https://doi.org/\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem[{Abadi et~al.(2016)}]{tensorflow2016}
+Abadi, M., and Coauthors, 2016: Tensorflow: a system for large-scale machine
+  learning. \textit{Osdi}, Savannah, GA, USA, Vol.~16, 265--283.
+
+\bibitem[{Goodfellow et~al.(2016)Goodfellow, Bengio,, and
+  Courville}]{deepL2016}
+Goodfellow, I., Y.~Bengio, and A.~Courville, 2016: \textit{Deep learning}. MIT
+  press.
+
+\bibitem[{Grecu et~al.(2018)Grecu, Tian, Heymsfield, Tokay, Olson, Heymsfield,,
+  and Bansemer}]{grecu2018}
+Grecu, M., L.~Tian, G.~M. Heymsfield, A.~Tokay, W.~S. Olson, A.~J. Heymsfield,
+  and A.~Bansemer, 2018: Nonparametric methodology to estimate precipitating
+  ice from multiple-frequency radar reflectivity observations. \textit{Journal
+  of Applied Meteorology and Climatology}, \textbf{57~(11)}, 2605--2622.
+
+\bibitem[{MacKay(2003)}]{mackay2003information}
+MacKay, D.~J., 2003: \textit{Information theory, inference and learning
+  algorithms}. Cambridge university press.
+
+\end{thebibliography}
