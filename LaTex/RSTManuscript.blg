@@ -5,45 +5,45 @@ The style file: ametsocV6.bst
 Database file #1: references.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--can't use both volume and number fields in tensorflow2016
-You've used 4 entries,
+You've used 5 entries,
             3493 wiz_defined-function locations,
-            881 strings with 7627 characters,
-and the built_in function-call counts, 3914 in all, are:
-= -- 418
-> -- 154
+            890 strings with 7862 characters,
+and the built_in function-call counts, 5105 in all, are:
+= -- 557
+> -- 202
 < -- 2
-+ -- 84
-- -- 39
-* -- 201
-:= -- 437
-add.period$ -- 8
-call.type$ -- 4
-change.case$ -- 30
-chr.to.int$ -- 4
-cite$ -- 5
-duplicate$ -- 374
-empty$ -- 232
-format.name$ -- 46
-if$ -- 807
++ -- 111
+- -- 51
+* -- 265
+:= -- 557
+add.period$ -- 10
+call.type$ -- 5
+change.case$ -- 39
+chr.to.int$ -- 5
+cite$ -- 6
+duplicate$ -- 493
+empty$ -- 292
+format.name$ -- 60
+if$ -- 1049
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 45
-newline$ -- 23
-num.names$ -- 16
-pop$ -- 175
+missing$ -- 57
+newline$ -- 26
+num.names$ -- 20
+pop$ -- 227
 preamble$ -- 1
-purify$ -- 28
+purify$ -- 36
 quote$ -- 0
-skip$ -- 238
+skip$ -- 312
 stack$ -- 0
-substring$ -- 161
-swap$ -- 275
+substring$ -- 215
+swap$ -- 374
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 30
+type$ -- 39
 warning$ -- 1
-while$ -- 19
+while$ -- 25
 width$ -- 0
-write$ -- 54
+write$ -- 65
 (There was 1 warning)

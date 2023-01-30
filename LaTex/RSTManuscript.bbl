@@ -1,4 +1,4 @@
-\begin{thebibliography}{4}
+\begin{thebibliography}{5}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \renewcommand{\UrlFont}{\rmfamily}
@@ -12,6 +12,11 @@
 \bibitem[{Abadi et~al.(2016)}]{tensorflow2016}
 Abadi, M., and Coauthors, 2016: Tensorflow: a system for large-scale machine
   learning. \textit{Osdi}, Savannah, GA, USA, Vol.~16, 265--283.
+
+\bibitem[{Deng et~al.(2015)Deng, Mace, Wang,, and Berry}]{deng2015}
+Deng, M., G.~G. Mace, Z.~Wang, and E.~Berry, 2015: Cloudsat 2c-ice product
+  update with a new ze parameterization in lidar-only region. \textit{Journal
+  of Geophysical Research: Atmospheres}, \textbf{120~(23)}, 12--198.
 
 \bibitem[{Goodfellow et~al.(2016)Goodfellow, Bengio,, and
   Courville}]{deepL2016}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.23)  27 JAN 2023 22:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.9.23)  29 JAN 2023 20:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -549,148 +549,157 @@ LaTeX Info: Redefining \\ on input line 3056.
 \thanksnum=\count302
 \savethanksnum=\count303
 )
+(./slashbox.sty
+slashbox style by K.Yasuoka, May 1993.
+\@slashboxa=\box100
+\@slashboxb=\box101
+\@slashboxc=\box102
+\@slashboxwd=\count304
+\@slashboxht=\count305
+\@slashsepl=\dimen164
+\@slashsepr=\dimen165
+)
 LaTeX Font Info:    Trying to load font information for OT1+ntxtlf on input lin
-e 68.
-
-(/Users/mgrecu/bin/texlive/2022/texmf-dist/tex/latex/newtx/ot1ntxtlf.fd
+e 70.
+ (/Users/mgrecu/bin/texlive/2022/texmf-dist/tex/latex/newtx/ot1ntxtlf.fd
 File: ot1ntxtlf.fd 2021/05/24 v1.0 font definition file for OT1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 68.
+(Font)              scaled to size 12.0pt on input line 70.
 
 (/Users/mgrecu/bin/texlive/2022/texmf-dist/tex/latex/l3backend/l3backend-pdftex
 .def
 File: l3backend-pdftex.def 2022-08-30 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count304
-\l__pdf_internal_box=\box100
+\l__color_backend_stack_int=\count306
+\l__pdf_internal_box=\box103
 ) (./RSTManuscript.aux)
 \openout1 = `RSTManuscript.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 68.
+LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 70.
 LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line
- 68.
+ 70.
 
 (/Users/mgrecu/bin/texlive/2022/texmf-dist/tex/latex/newtx/omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 70.
 LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 
-68.
+70.
 
 (/Users/mgrecu/bin/texlive/2022/texmf-dist/tex/latex/newtx/untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 70.
 LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line
- 68.
+ 70.
 
 (/Users/mgrecu/bin/texlive/2022/texmf-dist/tex/latex/newtx/lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 70.
 LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input lin
-e 68.
+e 70.
 
 (/Users/mgrecu/bin/texlive/2022/texmf-dist/tex/latex/newtx/lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
-LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    ... okay on input line 70.
 
 (/Users/mgrecu/bin/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count305
-\scratchdimen=\dimen164
-\scratchbox=\box101
-\nofMPsegments=\count306
-\nofMParguments=\count307
+\scratchcounter=\count307
+\scratchdimen=\dimen166
+\scratchbox=\box104
+\nofMPsegments=\count308
+\nofMParguments=\count309
 \everyMPshowfont=\toks29
-\MPscratchCnt=\count308
-\MPscratchDim=\dimen165
-\MPnumerator=\count309
-\makeMPintoPDFobject=\count310
+\MPscratchCnt=\count310
+\MPscratchDim=\dimen167
+\MPnumerator=\count311
+\makeMPintoPDFobject=\count312
 \everyMPtoPDFconversion=\toks30
 )
-LaTeX Info: Command `\dddot' is already robust on input line 68.
-LaTeX Info: Command `\ddddot' is already robust on input line 68.
-\c@mv@tabular=\count311
-\c@mv@boldtabular=\count312
+LaTeX Info: Command `\dddot' is already robust on input line 70.
+LaTeX Info: Command `\ddddot' is already robust on input line 70.
+\c@mv@tabular=\count313
+\c@mv@boldtabular=\count314
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 14.4pt on input line 71.
+(Font)              scaled to size 14.4pt on input line 73.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 14.4pt on input line 71.
+(Font)              scaled to size 14.4pt on input line 73.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 5.0pt on input line 71.
+(Font)              scaled to size 5.0pt on input line 73.
 LaTeX Font Info:    Trying to load font information for OT1+phv on input line 7
-1.
+3.
  (/Users/mgrecu/bin/texlive/2022/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/phv/m/n' will be
-(Font)              scaled to size 4.85pt on input line 71.
+(Font)              scaled to size 4.85pt on input line 73.
 LaTeX Font Info:    Trying to load font information for OT1+minntx on input lin
-e 71.
+e 73.
 
 (/Users/mgrecu/bin/texlive/2022/texmf-dist/tex/latex/newtx/ot1minntx.fd
 File: ot1minntx.fd 2022/01/20 v1.0 font definition file for OT1/minntx
 )
 LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 7
-1.
+3.
 
 (/Users/mgrecu/bin/texlive/2022/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 71.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 73.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8.8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 71.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 73.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6.6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 71.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 73.
 LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 
-71.
+73.
 
 (/Users/mgrecu/bin/texlive/2022/texmf-dist/tex/latex/newtx/untxmia.fd
 File: untxmia.fd 2018/04/14 Fontinst v1.933 font definitions for U/ntxmia.
 )
 LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 
-71.
+73.
 
 (/Users/mgrecu/bin/texlive/2022/texmf-dist/tex/latex/newtx/untxsym.fd
 File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
 )
 LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 
-71.
+73.
 
 (/Users/mgrecu/bin/texlive/2022/texmf-dist/tex/latex/newtx/untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 )
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.8pt on input line 71.
+(Font)              scaled to size 8.8pt on input line 73.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.5pt on input line 71.
+(Font)              scaled to size 8.5pt on input line 73.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/it' will be
-(Font)              scaled to size 8.5pt on input line 71.
+(Font)              scaled to size 8.5pt on input line 73.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/it' will be
-(Font)              scaled to size 12.0pt on input line 71.
+(Font)              scaled to size 12.0pt on input line 73.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/it' will be
-(Font)              scaled to size 8.8pt on input line 71.
+(Font)              scaled to size 8.8pt on input line 73.
  [1{/Users/mgrecu/bin/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 }]
 [2]
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 12.0pt on input line 105.
+(Font)              scaled to size 12.0pt on input line 107.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -698,32 +707,32 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <./Figs/fig01.png, id=16, 505.89pt x 578.16pt>
 File: ./Figs/fig01.png Graphic file (type png)
 <use ./Figs/fig01.png>
-Package pdftex.def Info: ./Figs/fig01.png  used on input line 182.
+Package pdftex.def Info: ./Figs/fig01.png  used on input line 188.
 (pdftex.def)             Requested size: 351.0pt x 401.14516pt.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.5pt on input line 186.
+(Font)              scaled to size 10.5pt on input line 192.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/sc' will be
-(Font)              scaled to size 10.5pt on input line 186.
-LaTeX Font Info:    Calculating math sizes for size <10.5> on input line 186.
+(Font)              scaled to size 10.5pt on input line 192.
+LaTeX Font Info:    Calculating math sizes for size <10.5> on input line 192.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <10.5> not available
-(Font)              size <10.95> substituted on input line 186.
+(Font)              size <10.95> substituted on input line 192.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <10.5> not available
-(Font)              size <10.95> substituted on input line 186.
+(Font)              size <10.95> substituted on input line 192.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <10.5> not available
-(Font)              size <10.95> substituted on input line 186.
+(Font)              size <10.95> substituted on input line 192.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 186.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 192.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.66495> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 186.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 192.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5.77502> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 186.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 192.
 
 Underfull \vbox (badness 2564) has occurred while \output is active []
 
@@ -731,7 +740,7 @@ Underfull \vbox (badness 2564) has occurred while \output is active []
 <./Figs/fig02.png, id=25, 462.528pt x 346.896pt>
 File: ./Figs/fig02.png Graphic file (type png)
 <use ./Figs/fig02.png>
-Package pdftex.def Info: ./Figs/fig02.png  used on input line 206.
+Package pdftex.def Info: ./Figs/fig02.png  used on input line 212.
 (pdftex.def)             Requested size: 351.0pt x 263.26257pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -739,72 +748,56 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [5]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [6 <./Figs/fig01.png>]
-<./Figs/fig03.png, id=35, 462.528pt x 346.896pt>
+ [6 <./Figs/fig01.png>] [7 <./Figs/fig02.png>]
+<./Figs/fig03.png, id=40, 462.528pt x 346.896pt>
 File: ./Figs/fig03.png Graphic file (type png)
 <use ./Figs/fig03.png>
-Package pdftex.def Info: ./Figs/fig03.png  used on input line 239.
+Package pdftex.def Info: ./Figs/fig03.png  used on input line 243.
 (pdftex.def)             Requested size: 351.0pt x 263.26257pt.
 LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input lin
-e 266.
+e 270.
 
 (/Users/mgrecu/bin/texlive/2022/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
 File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
 )
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 266.
+(Font)              scaled to size 12.0pt on input line 270.
 
-[7 <./Figs/fig02.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [8 <./Figs/fig03.png>]
-Underfull \vbox (badness 3635) has occurred while \output is active []
+Underfull \vbox (badness 3724) has occurred while \output is active []
 
  [9]
+[10]
 LaTeX Font Info:    Freeze math alphabet allocation in version normal.
-(Font)              Allocated math groups: 15 (local: 2) on input line 318.
-
-Underfull \vbox (badness 2111) has occurred while \output is active []
-
- [10]
+(Font)              Allocated math groups: 15 (local: 2) on input line 324.
 LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
-ne 319.
+ne 325.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 319.
+ine 325.
 LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
-ne 320.
+ne 326.
 LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
-ne 320.
+ne 326.
 LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
-ne 321.
+ne 327.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 321.
+ine 327.
 LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
-ne 321.
+ne 327.
 LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
-ne 322.
+ne 328.
 LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
-ne 322.
+ne 328.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 323.
+ine 329.
 LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
-ne 324.
+ne 330.
 LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
-ne 324.
+ne 330.
 LaTeX Font Info:    Undo math alphabet allocation in version normal on input li
-ne 324.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 348.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 348.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 349.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 352.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 352.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 353.
+ne 330.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 354.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
@@ -812,87 +805,139 @@ ine 354.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
 ine 355.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 356.
+ine 358.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 358.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 359.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 360.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 360.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 361.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 362.
 <./Figs/fig04.png, id=52, 462.528pt x 346.896pt>
 File: ./Figs/fig04.png Graphic file (type png)
 <use ./Figs/fig04.png>
-Package pdftex.def Info: ./Figs/fig04.png  used on input line 364.
+Package pdftex.def Info: ./Figs/fig04.png  used on input line 370.
 (pdftex.def)             Requested size: 351.0pt x 263.26257pt.
-<./Figs/fig05.png, id=53, 462.528pt x 346.896pt>
+<./Figs/fig05.png, id=53, 505.89pt x 578.16pt>
 File: ./Figs/fig05.png Graphic file (type png)
 <use ./Figs/fig05.png>
-Package pdftex.def Info: ./Figs/fig05.png  used on input line 375.
-(pdftex.def)             Requested size: 351.0pt x 263.26257pt.
+Package pdftex.def Info: ./Figs/fig05.png  used on input line 381.
+(pdftex.def)             Requested size: 351.0pt x 401.14516pt.
 
-Underfull \vbox (badness 2538) has occurred while \output is active []
+Underfull \vbox (badness 1215) has occurred while \output is active []
 
  [11]
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 387.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 387.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 388.
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [12 <./Figs/fig04.png>]
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 381.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 381.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 382.
-<./Figs/fig06.png, id=61, 462.528pt x 346.896pt>
+ [12]
+<./Figs/fig06.png, id=60, 462.528pt x 346.896pt>
 File: ./Figs/fig06.png Graphic file (type png)
 <use ./Figs/fig06.png>
-Package pdftex.def Info: ./Figs/fig06.png  used on input line 393.
+Package pdftex.def Info: ./Figs/fig06.png  used on input line 399.
 (pdftex.def)             Requested size: 351.0pt x 263.26257pt.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 394.
+ine 400.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [13 <./Figs/fig05.png>]
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 401.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 406.
-LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 407.
-<./Figs/fig07.png, id=67, 462.528pt x 346.896pt>
+ [13 <./Figs/fig04.png>]
+<./Figs/fig07.png, id=66, 462.528pt x 346.896pt>
 File: ./Figs/fig07.png Graphic file (type png)
 <use ./Figs/fig07.png>
-Package pdftex.def Info: ./Figs/fig07.png  used on input line 412.
+Package pdftex.def Info: ./Figs/fig07.png  used on input line 426.
 (pdftex.def)             Requested size: 351.0pt x 263.26257pt.
-<./Figs/fig08.png, id=68, 505.89pt x 578.16pt>
+<./Figs/fig08.png, id=67, 505.89pt x 578.16pt>
 File: ./Figs/fig08.png Graphic file (type png)
 <use ./Figs/fig08.png>
-Package pdftex.def Info: ./Figs/fig08.png  used on input line 418.
+Package pdftex.def Info: ./Figs/fig08.png  used on input line 433.
 (pdftex.def)             Requested size: 351.0pt x 401.14516pt.
-<./Figs/fig09.png, id=69, 462.528pt x 346.896pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [14 <./Figs/fig05.png>]
+
+LaTeX Warning: Text page 15 contains only floats.
+
+
+Underfull \vbox (badness 8113) has occurred while \output is active []
+
+ [15 <./Figs/fig06.png> <./Figs/fig07.png>]
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 444.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 444.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 445.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 445.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 445.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 445.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 446.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 446.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [16 <./Figs/fig08.png>]
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 450.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 450.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 451.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 451.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 452.
+<./Figs/fig09.png, id=81, 462.528pt x 346.896pt>
 File: ./Figs/fig09.png Graphic file (type png)
 <use ./Figs/fig09.png>
-Package pdftex.def Info: ./Figs/fig09.png  used on input line 424.
+Package pdftex.def Info: ./Figs/fig09.png  used on input line 465.
 (pdftex.def)             Requested size: 351.0pt x 263.26257pt.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.0pt on input line 428.
+(Font)              scaled to size 8.0pt on input line 470.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 431.
+(Font)              size <5> substituted on input line 473.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/b/it' in size <5.5> not available
-(Font)              size <5> substituted on input line 431.
+(Font)              size <5> substituted on input line 473.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/b/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 431.
+(Font)              size <5> substituted on input line 473.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 431.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 473.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6.2> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 431.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 473.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5.5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 431.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 473.
 LaTeX Font Info:    No math alphabet change to frozen version normal on input l
-ine 438.
-[14 <./Figs/fig06.png>] [15 <./Figs/fig07.png>] [16 <./Figs/fig08.png>]
-[17 <./Figs/fig09.png>] (./RSTManuscript.bbl) [18
+ine 475.
+LaTeX Font Info:    No math alphabet change to frozen version normal on input l
+ine 480.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [17 <./Figs/fig09.png>] [18] [19] (./RSTManuscript.bbl) [20
 
 ] (./RSTManuscript.aux)
 
@@ -901,31 +946,33 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 8928 strings out of 476992
- 133346 string characters out of 5826121
- 455188 words of memory out of 5000000
- 29840 multiletter control sequences out of 15000+600000
- 550269 words of font info for 206 fonts, out of 8000000 for 9000
+ 8968 strings out of 476992
+ 134117 string characters out of 5826121
+ 455647 words of memory out of 5000000
+ 29875 multiletter control sequences out of 15000+600000
+ 550685 words of font info for 208 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 70i,14n,76p,481b,349s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 70i,14n,76p,481b,430s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/Users/mgrecu/bin/texlive/2022/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc
 }{/Users/mgrecu/bin/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf-p
 c.enc}{/Users/mgrecu/bin/texlive/2022/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-
 tlf.enc}{/Users/mgrecu/bin/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}
 </Users/mgrecu/bin/texlive/2022/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb
 ></Users/mgrecu/bin/texlive/2022/texmf-dist/fonts/type1/public/newtx/NewTXMI7.p
-fb></Users/mgrecu/bin/texlive/2022/texmf-dist/fonts/type1/public/tex-gyre/qtmr.
-pfb></Users/mgrecu/bin/texlive/2022/texmf-dist/fonts/type1/public/newtx/txexs.p
-fb></Users/mgrecu/bin/texlive/2022/texmf-dist/fonts/type1/public/newtx/txmiaX.p
-fb></Users/mgrecu/bin/texlive/2022/texmf-dist/fonts/type1/public/newtx/txsys.pf
-b></Users/mgrecu/bin/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pf
-b></Users/mgrecu/bin/texlive/2022/texmf-dist/fonts/type1/public/newtx/ztmb.pfb>
-</Users/mgrecu/bin/texlive/2022/texmf-dist/fonts/type1/public/newtx/ztmr.pfb></
-Users/mgrecu/bin/texlive/2022/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
-Output written on RSTManuscript.pdf (18 pages, 499626 bytes).
+fb></Users/mgrecu/bin/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/latxf
+ont/line10.pfb></Users/mgrecu/bin/texlive/2022/texmf-dist/fonts/type1/public/te
+x-gyre/qtmr.pfb></Users/mgrecu/bin/texlive/2022/texmf-dist/fonts/type1/public/n
+ewtx/txexs.pfb></Users/mgrecu/bin/texlive/2022/texmf-dist/fonts/type1/public/ne
+wtx/txmiaX.pfb></Users/mgrecu/bin/texlive/2022/texmf-dist/fonts/type1/public/ne
+wtx/txsys.pfb></Users/mgrecu/bin/texlive/2022/texmf-dist/fonts/type1/urw/helvet
+ic/uhvr8a.pfb></Users/mgrecu/bin/texlive/2022/texmf-dist/fonts/type1/public/new
+tx/ztmb.pfb></Users/mgrecu/bin/texlive/2022/texmf-dist/fonts/type1/public/newtx
+/ztmr.pfb></Users/mgrecu/bin/texlive/2022/texmf-dist/fonts/type1/public/newtx/z
+tmri.pfb>
+Output written on RSTManuscript.pdf (20 pages, 588112 bytes).
 PDF statistics:
- 138 PDF objects out of 1000 (max. 8388607)
- 78 compressed objects within 1 object stream
+ 150 PDF objects out of 1000 (max. 8388607)
+ 86 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  46 words of extra memory for PDF output out of 10000 (max. 10000000)
 

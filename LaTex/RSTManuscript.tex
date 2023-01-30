@@ -11,7 +11,7 @@
 %% Start with one of the following:
 % 1.5-SPACED VERSION FOR SUBMISSION TO THE AMS
 \documentclass{ametsocV6.1}
-
+\usepackage{slashbox}
 % TWO-COLUMN JOURNAL PAGE LAYOUT---FOR AUTHOR USE ONLY
 % \documentclass[twocol]{ametsocV6.1}
 
@@ -24,7 +24,8 @@
 \title{Synergistic retrievals of ice in high clouds from lidar, 
 Ku-band radar and submillimeter wave radiometer observations}
 
-%% Enter authors' names and affiliations as you see in the examples below.
+%% Enter authors' names
+% and affiliations as you see in the examples below.
 %
 %% Use \correspondingauthor{} and \thanks{} (\thanks command to be used for affiliations footnotes, 
 %% such as current affiliation, additional affiliation, deceased, co-first authors, etc.)
@@ -52,9 +53,10 @@ Ku-band radar and submillimeter wave radiometer observations}
 %\aff{d}{Fourth Affiliation}
 %}
 
-\authors{Mircea Grecu\aff{a}\correspondingauthor{Mircea Grecu, mircea.grecu-1@nasa.gov}
+\authors{Mircea Grecu\aff{a,b}\correspondingauthor{Mircea Grecu, mircea.grecu-1@nasa.gov}
 and John Yorks \aff{a}}
-\affiliation{\aff{a}{NASA GSFC}}
+\affiliation{\aff{a}{NASA GSFC}\\
+\aff{b}{Morgan State University}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % ABSTRACT
@@ -106,27 +108,31 @@ and John Yorks \aff{a}}
 The future NASA Atmospheric Observing System (AOS) mission (Braun 2022) is expected to feature new 
 combinations of observations that may be used to quantify the amounts of ice in high clouds and 
 characterize the microphysical properties of ice particles. These observations include lidar backscatter,
- Ku-band radar reflectivity and submillimeter wave radiometer brightness temperature measurements.  
- While not optimal for cloud ice estimation, but for the characterization of a broader spectrum of 
- cloud and precipitation processes, these observations are nevertheless synergistic from the 
- characterization of ice clouds perspective. That is, despite the fact that lidar observations 
- attenuate quickly in thick ice clouds and the Ku-band radar will not be able to detect clouds 
- characterized by an echo weaker than 8.0 dBZ, the active observations are expected to provide context 
- that may be incorporated into radiometer retrievals. In this study, we investigate the impact of 
- incorporating the lidar and radar observations into the radiometer retrieval of ice clouds.
- Because the existent amount of coincident backscatter lidar, Ku-band radar, and submillimeter-wave 
- radiometer observations is rather insufficient to derive conclusive results, we employ accurate 
- physical models to simulate the lidar, radar and radiometer observations and use a cross-validation 
- methodology to characterize the retrieval accuracy. As retrievals from passive instrument 
- observations strongly depend on the "a priori" information (Rodgers 2000), for the results to be 
- relevant in real applications it is necessary to base them on realistic vertical distributions of 
- ice properties.  Such distributions may be derived from cloud-resolving-model (CRM) simulations 
- (Pfreundschuh et al. 2020) or directly from observations.  In this study, we employ the latter 
- approach, as CRMs may still be deficient in properly reproducing the vertical distribution of ice 
- clouds and their associated microphysical properties.  Specifically, we use observation and
- products from the CloudSat (CS) mission (Stephens et al. 2002) to derive a database of ice microphysical
- properties and associated simulated lidar, radar and radiometer observations.  The database is used to
-investigate the accuracy of the retrieved ice cloud properties from the simulated observations. The article
+Ku-band radar reflectivity and submillimeter wave radiometer brightness temperature measurements.  
+While not optimal for cloud ice estimation, but for the characterization of a broader spectrum of 
+cloud and precipitation processes, these observations are nevertheless synergistic from the 
+characterization of ice clouds perspective. That is, despite the fact that lidar observations 
+attenuate quickly in thick ice clouds and the Ku-band radar will not be able to detect clouds 
+characterized by an echo weaker than 8.0 dBZ, the active observations are expected to provide context 
+that may be incorporated into radiometer retrievals. Herein, term retrieval is defined as the process of 
+estimating geophysical variables from remote sensing observations.
+%, but, as customary in the scientific5
+%literature, estimates are occasionally referred to as retrievals as well.  
+ In this study, we investigate the impact of 
+incorporating the lidar and radar observations into the radiometer retrieval of ice clouds.
+Because the existent amount of coincident backscatter lidar, Ku-band radar, and submillimeter-wave 
+radiometer observations is rather insufficient to derive conclusive results, we employ accurate 
+physical models to simulate the lidar, radar and radiometer observations and use a cross-validation 
+methodology to characterize the retrieval accuracy. As estimates from passive instrument 
+observations strongly depend on the "a priori" information (Rodgers 2000), for results to be 
+relevant in real applications it is necessary to base them on realistic vertical distributions of 
+ice properties.  Such distributions may be derived from cloud-resolving-model (CRM) simulations 
+(Pfreundschuh et al. 2020) or directly from observations.  In this study, we employ the latter 
+approach, as CRMs may still be deficient in properly reproducing the vertical distribution of ice 
+clouds and their associated microphysical properties.  Specifically, we use observation and
+products from the CloudSat (CS) mission (Stephens et al. 2002) to derive a database of ice microphysical
+properties and associated simulated lidar, radar and radiometer observations.  The database is used to
+investigate the accuracy of the estimated ice cloud properties from the simulated observations. The article
 is organized as follows.  In Section 2, we describe the approach used to derive the ice properties and
 the associated simulated observations, the retrieval and the evaluation methodology.  In Section 3, we 
 present the results of the evaluation methodology. We conclude in Section 4.
@@ -209,11 +215,9 @@ function of the relative height.
 
 For the determination of reference $a$ and $b$ values to be used with Equation (\ref{eq:1}), we assume that 
 PSDs are normalized gamma  distributions with $N_w=0.08cm^{-4}$ and $\mu=2$ and calculate 
-
 \begin{equation}
  Z=\frac {\lambda ^4} {\pi ^5 |K_w|^2} \int_0^{\infty} N(D,D_m) \sigma _b(D) dD
 \end{equation}
-
 where $\lambda$ is the radar frequency, $|K_w|$ is the dielectric factor of water, $N(D,D_m) dD$ is the number 
 of ice particles of diameter with D and D+dD per unit volume, $D_m$ is the mass weighted mean diameter of the 
 distribution, and $\sigma _b(D)$ is the backscattering cross-section of ice particle of diameter $D$. The mass 
@@ -297,14 +301,17 @@ of ice is difficult to quantify from radiometer-only observations, because signi
 distributions may lead to very similar radiometer observations.  This makes radiometer-only retrievals highly 
 dependent on the "a priori" information on the distribution of ice clouds in the atmosphere. As previously 
 mentioned, this is the reason why CS-based IWC retrievals were preferred to CRM simulations, as retrievals are 
-expected to exhibit more natural and less biased distributions. 
+expected to result in more natural and less biased distributions. 
 
 We employ a two-step estimation methodology similar to that of \cite{grecu2018}.  In the first step, we 
-estimate from the simulated observations the IWC class, out of the 18 classes of shown in Figure \ref{f1},
-to which the estimated IWC profile is most likely to belong. In the second step, we estimate the IWC profile,
+estimate the IWC class, out of the 18 classes of shown in Figure \ref{f1},
+to which the estimated IWC profile is most likely to belong. The class is estimated directly from the synthetic
+observations.
+In the second step, we estimate the IWC profile,
 using a class specific ensemble Kalman Smoother (EKS) methodology similar to that of \cite{grecu2018}.  
-The EKS algorithm updates the estimated IWC relative to the mean IWC of the class to which the profile belongs
-based on the differences between the actual active and passive observations and their mean class values. The 
+The EKS algorithm updates the estimated IWC relative to the mean IWC of the class to which the profile belongs.
+The differences between the actual active and passive observations and their mean class values are used
+in the update. The 
 second step of this procedure is formally identical to the one used in \cite{grecu2018}, but the first step is
 different. In \cite{grecu2018}, the first step was based on a simple distance-based evaluation. That strategy
 is likely to be suboptimal in this study, because the joint distribution of IWC profiles and associated
@@ -313,7 +320,6 @@ based on the TensorFlow library \citep{tensorflow2016}. The class estimation mod
 TensorFlow Model with two dense layers of 30 neurons each, followed by a softmax layer \citep{deepL2016}. The 
 class estimation model is trained using the 70\% of the simulated observations and the corresponding IWC 
 profiles, the remaining 30\% of the data being used for evaluation. %The training is done using the Adam
-
 \begin{equation}
     \mathbf{X}=\mathbf{\bar{X}_i}+\mathbf{Cov(X_i,Y_i)}\mathbf{Cov(Y_i,Y_i)}^{-1}(\mathbf{Y}-\mathbf{\bar{Y}_i}) \label{eq:enks}
 \end{equation}
@@ -325,7 +331,7 @@ $\mathbf{X_i}$ and $\mathbf{Y_i}$ are denoted by $\mathbf{Cov(X_i,Y_i)}$. In ste
 using the TensorFlow model, while in step 2, the IWC profile is estimated using the EKS algorithm summarized in 
 Equation \ref{eq:enks}.
 
-As already mentioned, a cross validation methodology is used for evaluation, with 70\% of 
+As already mentioned, a cross-validation methodology is used for evaluation, with 70\% of 
 the data used for training and the remaining 30\% of the data used for validation.  The partition of the data into 
 training and 
 evaluation subsets is done randomly.  Usually, the partition, training and evaluation steps are repeated 
@@ -391,46 +397,82 @@ radiometer-only observations.
 \begin{figure}[t]
     \centering
     \includegraphics[width=0.75\textwidth,angle=0]{./Figs/fig06.png}\\
-    \caption{Same as in Figure 3, but for the $IWC$ gravity center.}\label{f6}
+    \caption{Same as in Figure 4, but for the $IWC$ gravity center.}\label{f6}
 \end{figure}
 
 \subsection{Synergistic retrievals}
 
-From the synergy of the instrument perspective, it is useful to investigate how information easily derivable 
-from the active instrument observation can complement the submillimeter-wave radiometer observations. The top of 
-the clouds derived from the lidar backscatter observations is such information. To incorporate it into the $IWC$ 
-retrievals, we simply extend the dimension of the input by one entry that contains the lidar-based cloud top 
-estimate. This additional piece of information makes the retrievals more specific by confining the set of 
-potential matches to those that are consistent from the cloud top perspective with the lidar observations.
+The synergy of the instrument on the estimates may be investigating by simply incorporating lidar 
+and radar observations
+into the retrieval process and comparing the results with the radiometer-only estimates.  Although
+the lidar observations are subject to attenuation, they are able to provide information about the vertical
+distribution of ice in clouds, especially at the top of the clouds.  The radar observations, on the other hand,
+are able to provide information in the bottom part of the clouds, where the lidar signal is below the noise
+level due to attenuation. Therefore, the combined used of lidar and radar observations is expected to 
+provide a more complete characterization of the vertical distribution of ice in clouds and enable the
+derivation of more specific estimates than those derived from radiometer-only observations.
 
-Shown in Figure 5 is frequency plot of the $IWC$ gravity centers estimated from lidar and radiometer 
-observations as a function of the true $IWC$ gravity centers. One may note in the figure a significant 
-improvement relative to Figure 4.
+Shown in Figure \ref{f7} is the distribution of the synergistic IWP estimates as a function of their true
+values.  As apparent in the figure, the synergistic IWP estimates are more accurate than the radiometer-only
+estimates. At the same time, as apparent in Figure \ref{f8}, the retrieved conditional mean IWC for the 
+18 classes described section 2a and shown in Figure \ref{f1} are in significantly better (almost perfect)
+agreement with the true IWC profiles than those derived from radiometer-only observations.  Furthermore,
+as seen in Figure \ref{f8} the synergistic IWC gravity center estimates are in very good agreement with 
+the true IWC gravity center.
+
 
 \begin{figure}[t]
     \centering
     \includegraphics[width=0.75\textwidth,angle=0]{./Figs/fig07.png}\\
-    \caption{.}\label{f7}
+    \caption{Same as in Figure \ref{f4}, but with the lidar and radar observations incorporated in the
+    retrievals.}\label{f7}
 \end{figure}
 
 \begin{figure}[t]
     \centering
     \includegraphics[width=0.75\textwidth,angle=0]{./Figs/fig08.png}\\
-    \caption{.}\label{f8}
+    \caption{Same as in Figure \ref{f5}, but with the lidar and radar observations incorporated in the
+    retrievals.}\label{f8}
 \end{figure}
+
+While the estimates based on all instruments are significantly more accurate than those based on radiometer-only
+observations, it is useful to investigate how the two active instruments (lidar and radar) impact the
+estimates.  For conciseness, we used two statistical scores, namely, the normalized root mean square (NRMS) and
+the classification accuracy, to summarize the performance of the estimates.  The NRMS is defined as
+\begin{equation}
+NRMS=\frac {\sqrt {\frac {\sum_{i=1}^{N} (IWC_{i}-IWC_{true,i})^2} {N}}} {\sqrt {\frac {\sum_{i=1}^{N} (IWC_{true,i}-\overline{IWC})^2} {N}}} 
+\end{equation}
+where $IWC_{i}$ is the estimated IWP for the $i$-th sample, $IWC_{true,i}$ is the true IWC for the $i$-th sample,
+$\overline{IWC}$ is the IWC mean, and $N$ is the size of the estimation dataset.  The classification
+accuracy is defined as
+\begin{equation}
+CA=\frac {\sum_{i=1}^{N} \delta_{i}} {N}
+\end{equation}
+where $\delta_{i}$ is a binary variable that is equal to 1 if the estimated IWC class for the $i$-th sample is
+equal to the true IWC class for the $i$-th sample, and 0 otherwise. The performance summary is shown 
+in Table \ref{t1} for several combinations of instruments. It may be observed in the table that the
+performance of the estimates based on all instruments is significantly better than those based on
+radiometer-only observations.  Furthermore, the inclusion of the lidar observations in the retrieval
+process has a larger impact on the retrieval performance the inclusion of the radar
+observations.  This is expected since the lidar observations are able to provide information about the
+top of the clouds, where the radar observations are above the noise level only occasionally. Nevertheless,
+the inclusion of the radar observations in the retrieval process has a notable impact on the
+accuracy of the IWC estimates relative to radiometer-only retrievals.
+
 
 \begin{figure}[t]
     \centering
     \includegraphics[width=0.75\textwidth,angle=0]{./Figs/fig09.png}\\
-    \caption{.}\label{f9}
+    \caption{Same as in Figure \ref{f6}, but with the lidar and radar observations incorporated in the
+    retrievals.}\label{f9}
 \end{figure}
 
 \begin{table}[t]
 \caption{Performance summary.}\label{t1}
 \begin{center}
-\begin{tabular}{ccccc}
+\begin{tabular}{c|cccc}
 \hline\hline
-Instruments\\Score & Radiometer & Radar-Radiometer & Lidar-Radiometer & Radar-Lidar-Radiometer\\
+\backslashbox{Score}{Instruments} & Radiometer & Radar-Radiometer & Lidar-Radiometer & Radar-Lidar-Radiometer\\
 \hline
 NRMS & 0.73 &  0.59  &  0.32 & 0.22 \\
 Class. Accurracy & 0.39 & 0.48 & 0.92 & 0.94 \\
@@ -441,7 +483,41 @@ Class. Accurracy & 0.39 & 0.48 & 0.92 & 0.94 \\
 
 % text...
 % 
-% \section{Section title}
+\section{Conclusions}
+In this study, we investigate the synergy of lidar, Ku-band radar, and sub-millimeter-wave radiometer
+measurements in the retrieval of the ice from satellite observations.  The synergy is analyzed through
+the generation of a large dataset of IWC profile and the calculation of lidar, radar and radiometer 
+observations using realistic models. The characteristics of the instruments (e.g. frequencies, sensitivities,
+etc.) are set based on the expected characteristics of instruments of the AOS mission. 
+A cross-validation methodology is used to assess the 
+accuracy of the retrieved IWC profiles from various combinations of observations from the three instruments.
+Specifically, the IWC and associated observations is randomly divided into two datasets, one for the 
+training and the other for the evaluation.  The training dataset is used to train the retrieval algorithm,
+while the evaluation dataset is used to assess the retrieval performance. 
+
+To ensure the self-consistency of results and their relevance to practical applications, the dataset of IWC 
+profiles is derived from CloudSat reflectivity observations. Although subject to potential biases
+and uncertainties due to deficiencies in the retrieval models, these profiles are deemed to be more realistic
+than those derived from cloud resolving model simulations. Moreover, they are roughly consistent with
+the 2C-ICE CloudSat product \citep{deng2015}, while relying on assumptions and parameterizations that
+enable the accurate computation of backscatter lidar, Ku-band radar, and sub-millimiter-wave radiometer
+observations.
+
+The retrieval of the ice water content (IWC) profiles from the computed observations is achieved in two
+steps.  In the first step, a class, out of 18 potential classes characterized by different 
+vertical distribution of IWC, is estimated from the observations. The 18 classes are predetermined based on
+k-Means clustering algorithm.  In the second step, the IWC profile is estimated using and Ensemble Kalman
+Smoother (EKS) algorithm that uses the estimated class as a priori information.
+
+The results of the study show that the synergy of lidar, radar, and radiometer observations is significant
+in the retrieval of the IWC profiles.  The inclusion of the lidar observations in the retrieval process has a
+larger impact on the retrieval performance than the inclusion of the radar observations.  
+
+Further work is necessary out to assess the impact of sources of uncertainties such as variability in the
+PSD intercept not captured by the current parameterization, differences in the instruments' footprint sizes,
+and non-uniform beam filling on the retrievals of the IWC profiles.  Other sources of uncertainties that
+need be considered include the potential existence of supercooled liquid water in the clouds and uncertainties
+in the electromagnetic scattering properties used in the in instruments' forward models.
 
 %%%
 % \section{First primary heading}
@@ -479,6 +555,8 @@ Class. Accurracy & 0.39 & 0.48 & 0.92 & 0.94 \\
 % ACKNOWLEDGMENTS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \acknowledgments
+This work was supported by the NASA Remote Sensing Theory project through Grant 80NSSC20K1729. 
+The authors thank Dr. Lucia Tsaoussi (NASA Headquarters) for her support of this effort.
 %  Keep acknowledgments (note correct spelling: no ``e'' between the ``g'' and
 % ``m'') as brief as possible. In general, acknowledge only direct help in
 %  writing or research. Financial support (e.g., grant numbers) for the work done, 
