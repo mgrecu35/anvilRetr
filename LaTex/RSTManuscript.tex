@@ -65,7 +65,23 @@ and John Yorks \aff{a}}
 % Abstracts should not exceed 250 words in length!
 %
  
-\abstract{Enter the text of your abstract here.}
+\abstract{ In this study, we investigate the synergy of lidar, Ku-band radar, and sub-millimeter-wave radiometer measurements
+in the retrieval of the ice from satellite observations. The synergy is analyzed through the generation of a large dataset 
+of IWC profile and simulated lidar, radar and radiometer observations. 
+The characteristics of the instruments e. g. frequencies, sensitivities, etc. are set based on the expected characteristics 
+of instruments of the AOS mission. A cross-validation methodology is used to assess the accuracy of the retrieved IWC 
+profiles from various combinations of observations from the three instruments. Specifically, the IWC and
+associated observations is randomly divided into two datasets, one for the training and the other for the evaluation.
+The training dataset is used to train the retrieval algorithm, while the evaluation dataset is used to assess the 
+retrieval performance. The dataset of IWC profiles is derived from CloudSat reflectivity observations.\\
+The retrieval of the ice water content IWC profiles from the computed observations is achieved in two steps. 
+In the first step, a class, out of 18 potential classes characterized by different vertical distribution of IWC, 
+is estimated from the observations. The 18 classes are predetermined based on k-Means clustering algorithm. 
+In the second step, the IWC profile is estimated using a Ensemble Kalman Smoother (EKS) algorithm that uses the 
+estimated class as a priori information.\\
+The results of the study show that the synergy of lidar, radar, and radiometer observations is significant
+in the retrieval of the IWC profiles.  The inclusion of the lidar observations in the retrieval process has a
+larger impact on the retrieval performance than the inclusion of the radar observations.}
 
 \begin{document}
 
@@ -108,45 +124,46 @@ and John Yorks \aff{a}}
 The future NASA Atmospheric Observing System (AOS) mission (Braun 2022) is expected to feature new 
 combinations of observations that may be used to quantify the amounts of ice in high clouds and 
 characterize the microphysical properties of ice particles. These observations include lidar backscatter,
-Ku-band radar reflectivity and submillimeter wave radiometer brightness temperature measurements.  
+Ku-band radar reflectivity, and submillimeter wave radiometer brightness temperature measurements.  
 While not optimal for cloud ice estimation, but for the characterization of a broader spectrum of 
 cloud and precipitation processes, these observations are nevertheless synergistic from the 
 characterization of ice clouds perspective. That is, despite the fact that lidar observations 
 attenuate quickly in thick ice clouds and the Ku-band radar will not be able to detect clouds 
 characterized by an echo weaker than 8.0 dBZ, the active observations are expected to provide context 
-that may be incorporated into radiometer retrievals. Herein, term retrieval is defined as the process of 
-estimating geophysical variables from remote sensing observations.
+that may be incorporated into the radiometer retrievals. Herein, term retrieval is defined as the 
+process of estimating geophysical variables from remote sensing observations.
 %, but, as customary in the scientific5
 %literature, estimates are occasionally referred to as retrievals as well.  
- In this study, we investigate the impact of 
-incorporating the lidar and radar observations into the radiometer retrieval of ice clouds.
+In this study, we investigate the impact of 
+incorporating lidar and radar observations into the radiometer retrieval of ice clouds.
 Because the existent amount of coincident backscatter lidar, Ku-band radar, and submillimeter-wave 
 radiometer observations is rather insufficient to derive conclusive results, we employ accurate 
-physical models to simulate the lidar, radar and radiometer observations and use a cross-validation 
+physical models to simulate lidar, radar and radiometer observations and use a cross-validation 
 methodology to characterize the retrieval accuracy. As estimates from passive instrument 
-observations strongly depend on the "a priori" information (Rodgers 2000), for results to be 
-relevant in real applications it is necessary to base them on realistic vertical distributions of 
+observations strongly depend on "a priori" information \citep{rodgers2000inverse}, for results to be 
+relevant in real applications, it is necessary to base them on realistic vertical distributions of 
 ice properties.  Such distributions may be derived from cloud-resolving-model (CRM) simulations 
-(Pfreundschuh et al. 2020) or directly from observations.  In this study, we employ the latter 
+\citep{pfreundschuh2020synergistic,liu2022assessing} or directly from observations.  In this study, we employ the latter 
 approach, as CRMs may still be deficient in properly reproducing the vertical distribution of ice 
-clouds and their associated microphysical properties.  Specifically, we use observation and
+clouds and their associated microphysical properties.  Specifically, we use observations and
 products from the CloudSat (CS) mission (Stephens et al. 2002) to derive a database of ice microphysical
-properties and associated simulated lidar, radar and radiometer observations.  The database is used to
-investigate the accuracy of the estimated ice cloud properties from the simulated observations. The article
-is organized as follows.  In Section 2, we describe the approach used to derive the ice properties and
+properties and associated simulated lidar, radar, and radiometer observations.  This database is used to
+investigate the accuracy of estimated ice cloud properties from the simulated observations. Another major
+difference relative to previous studies is the unique combination of instruments investigated herein.
+The article is organized as follows.  In Section 2, we describe the approach used to derive the ice properties and
 the associated simulated observations, the retrieval and the evaluation methodology.  In Section 3, we 
 present the results of the evaluation methodology. We conclude in Section 4.
 
 % \subsection*{subsection}
 % text...
 \section{Methodology}
-As previously mentioned, we use CloudSat (CS) observations (Stephens et 2002) to derive the vertical 
+As previously mentioned, we use CloudSat (CS) observations \citep{stephens2002} to derive the vertical 
 distributions of ice properties needed in the investigation.  Although research quality CS cloud ice 
 products exist, to maximize the physical consistency of the approach, we do not use them but derive ice amounts
 and associated properties directly from CS reflectivity observations.  This ensures the consistency between 
 the particle
 distribution assumptions and the electromagnetic scattering properties used in the CS reflectivity processing 
-and those used the simulation of the lidar, Ku-band radar and radiometer observations.  Lidar, Ku-band radar 
+and those used the simulation of the lidar, Ku-band radar and radiometer observations.  Lidar, Ku-band radar, 
 and submillimeter-wave radiometer observations are simulated from CS observations using accurate physical 
 models and realistic assumptions consistent with the most recent knowledge in the field of ice cloud 
 microphysics, and a non-parametric estimation methodology based on the k-Means clustering algorithm 
@@ -155,12 +172,12 @@ investigate the instrument synergy.  Details of the methodology are presented be
 
 \subsection{Assumptions and forward models}
 To quantify the number of ice particles in an elementary atmospheric volume as a function of their size, we use
-normalized gamma functions (Bringi et al. 2003).  The benefit of normalized gamma functions is that they 
+normalized gamma functions \citep{bringi2003}.  The benefit of normalized gamma functions is that they 
 encapsulate the variability of Ice Water Content (IWC) - reflectivity relationship into a single parameter,
 i.e. the 
-normalized Particle Size Distribution (PSD) intercept (Testud et al. 2001; Bringi et al. 2003). The normalized
+normalized Particle Size Distribution (PSD) intercept \citep{testud2001,bringi2003}. The normalized
 PSD intercept is defined as $N_w=\frac {4^4} {\pi \rho_w} \frac {IWC} {D_m^4}$, where $IWC$ is the ice water 
-content associated with the PSD, and $D_m$ is the mass weighted mean diameter.  Testud et al. (2001) showed 
+content associated with the PSD, and $D_m$ is the mass weighted mean diameter.  \cite{testud2001} showed 
 that the variability in IWC reflectivity (Z) relationships may be fully explained by variability in $N_w$, and 
 that a formula of the type
 \begin{equation}
@@ -169,15 +186,15 @@ IWC=N_w^{1-b}aZ^b \label{eq:1}
 perfectly explains the relationships between IWC and Z calculated from observed PSDs. Equation (\ref{eq:1}) is not 
 sufficient to derive accurate, unbiased estimates of ice water contents, because $N_w$ varies considerably in 
 time and space. Nevertheless, multiple studies showed that it is beneficial to parameterize $N_w$ as a function 
-of various variables, such as temperature (e.g. Hogan et al. 2006; Delanoe and Hogan 2008; Deng et al. 2010), 
+of various variables, such as temperature \citep{hogan2006retrieval, delanoe2008variational,deng2010tropical}, 
 rather than using $N_w$ independent relations.  In this study, we parameterize
-$N_w$ as a function of temperature based on the CloudSat 2C-ICE product (Deng et al. 2010; Deng et al. 2013).  
+$N_w$ as a function of temperature based on the CloudSat 2C-ICE product \citep{deng2010tropical,deng2013evaluation}.  
 Specifically, we cluster, based on similarity, a large set 2C-ICE profiles into 18 classes using a k-Means 
 procedure. The mean IWC profiles associated with the 18 classes are shown in continuous lines in Figure 1.  
 Alternative estimates, derived using PSD assumptions and electromagnetic scattering calculations that enable 
 accurate and physically consistent simulations of radar observations at Ku-band and radiometer observations of 
 submillimeter-wave frequencies are also shown in Figure 1. These estimates are based on the self-similarity 
-Rayleigh-Gans approximation (SSRGA) of Hogan et al. (2017). Details regarding the
+Rayleigh-Gans approximation (SSRGA) of \cite{hogan2017ssrga}. Details regarding the
 estimation process are provided in the following paragraphs.  As apparent in Figure 1, the CS and SSRGA estimates are in good 
 agreement.  Some discrepancies due to differences between the SSRGA $N_w$ parameterization and the CS 2C-ICE 
 "a priori assumptions" are also apparent, but they are not deemed critical in this study, whose objective is 
@@ -222,19 +239,19 @@ where $\lambda$ is the radar frequency, $|K_w|$ is the dielectric factor of wate
 of ice particles of diameter with D and D+dD per unit volume, $D_m$ is the mass weighted mean diameter of the 
 distribution, and $\sigma _b(D)$ is the backscattering cross-section of ice particle of diameter $D$. The mass 
 weighted mean diameter is equidistantly sampled to span the entire range of IWC values in the CS 2C-ICE dataset.
-The assumed mass-size relation is that of Brown and Francis (1995) because it works well with the 
-SSRGA scattering calculations (Heymsfield et al. 2022).  The open source software scatter-1.1 of Hogan (2019) 
+The assumed mass-size relation is that of \cite{brown1995improved} because it works well with the 
+SSRGA scattering calculations \citep{heymsfield2022impacts}.  The open source software scatter-1.1 of \citep{scatter-1.1}
 is used to provide the actual scattering properties. The SSRGA theory was developed for millimeter and 
 submillimeter-wave calculations and may not be applicable at lidar's wavelength.  Therefore, for lidar 
 calculations, we use the Mie solution included in the scatter-1.1 package. Although more accurate calculations 
 based on more 
-realistic ice particle shapes exist, they are rather incomplete and not readily available.  Moreover, Wagner 
-and Deleny (2022) compared lidar backscatter observations with backscatter calculations based on coincident PSD 
+realistic ice particle shapes exist, they are rather incomplete and not readily available.  Moreover, \cite{wagner_delene2022}
+ compared lidar backscatter observations with backscatter calculations based on coincident PSD 
 observations and the Mie solution and found good agreement, which suggests that electromagnetic properties 
 derived from Mie calculations are adequate for practical applications. The lidar molecular backscatter and 
 extinction are calculated using the lidar module of the CFMIP Observation Simulator Package 
-(COSP; Bodas-Salcedo et al. 2011).  To account for multiple-scattering in the lidar observations, we are using 
-the multiscatter-1.2.11 model (Hogan 2015) of Hogan and Battaglia (2008).  Shown in Figure 3 are the
+(COSP; \cite{bodas2011cosp}).  To account for multiple-scattering in the lidar observations, we are using 
+the multiscatter-1.2.11 model (Hogan 2015) of \cite{hogan2008lidar_ms}.  Shown in Figure 3 are the
 distributions of simulated Ku-band radar reflectivity and lidar bacscatter as function of height above 
 the freezing level.
 
@@ -247,28 +264,28 @@ the freezing level.
 \end{figure}
 
 The radiometer observations are calculated using a one-dimensional efficient, but accurate, radiative transfer 
-solver based on Eddington's approximation (Kummerow 1993). The Eddington's approximation has been found to work 
+solver based on Eddington's approximation \citep{kummerow1993edd}. The Eddington's approximation has been found to work 
 well in cloud and precipitation retrieval application despite its simplicity relative to more general (but also 
-computationally intensive) approaches such as the Monte Carlo radiative transfer solvers (Liu et al. 1996). 
+computationally intensive) approaches such as the Monte Carlo radiative transfer solvers \citep{liu1996three} 
 It should be noted tough that the phase functions of ice particles tend to be highly asymmetric at 
 sub-millimeter wave frequencies. For radiative transfer solutions based on the Eddington's approximation to be 
-accurate it is necessary that the delta-scaling approach (Joseph et al. 1976) be employed. The delta-scaling 
+accurate it is necessary that the delta-scaling approach \citep{joseph1976delta} be employed. The delta-scaling 
 approach transforms the initial radiative transfer equation into an equivalent one characterized by a less 
 asymmetric scattering function and more extinction, which makes the solution Eddington approximation more stable 
 and accurate. The absorption due to water vapor and other gases is quantified using the Rosenkranz model 
-(Rosenkranz 1998).  The water vapor, temperature and pressure distributions are derived based on a WRF 
-simulation of summer convection over the United States.  Specifically, the water vapor, temperature and 
+\citep{rosenkranz1998}.  The water vapor, temperature, and pressure distributions are derived based on a WRF 
+simulation of summer convection over the United States.  Specifically, the water vapor, temperature, and 
 pressure profiles associated with times and areas where the model produces anvils are selected and clustered 
 into 40 classes using the k-Means approach.  The mean extinction profiles at the radiometer frequencies are 
 calculated for every class 
 and used in process of calculating the brightness temperatures from the estimated ice profiles using a simple 
 Monte Carlo procedure.  That is, given a retrieved ice profile and its scattering property, an anvil class 
-and its associated absorption, temperature and pressure profiles are randomly selected and attached to the 
+and its associated absorption, temperature, and pressure profiles are randomly selected and attached to the 
 ice scattering properties. To make the procedure physically meaningful, temperature rather than height is 
 used in the ice scattering-gas absorption collocation process.  The emissivities are randomly chosen between 
 0.8 and 1.0 and assumed constant for all radiometer frequencies.  Brightness temperatures are calculated at 
 89-, 183.31 ± 1.1, and 325.15 ± 1.5 GHz, which correspond to three of the 10 channels of the SAPHIR-NG 
-radiometer envisioned to be deployed in the AOS mission (Brogniez et al. 2022).  The other channels are 
+radiometer envisioned to be deployed in the AOS mission \citep{brogniez2022time}.  The other channels are 
 centered on the same water vapor absorption lines and are not likely to offer additional information in 
 this rather controlled experiment. Nevertheless, the other channels are expected to be useful in reducing the 
 uncertainties caused by variability in the vertical distribution of water vapor, which may be greater in 
@@ -280,7 +297,7 @@ submillimeter-wave radiometer observations may be summarized as follows:
 \item Derivation of physically consistent radar and radiometer lookup tables to relate basic radar and 
 radiometer properties (e.g. reflectivity, attenuation, extinction, scattering-albedo, etc.) to PSD parameters 
 such as $IWC$ and $D_m$. The tables are derived for a single of $N_w$, but are usable with any value of 
-$N_w$ using the "normalization" operations described in Grecu et al. (2011).
+$N_w$ using the "normalization" operations described in \citep{grecu2011}.
 \item Derivation of Nw-relative height parameterization using the 2C-ICE product.
 \item Estimation of IWC and related PSD parameters from CS W-band radar observations, using the tables 
 constructed
@@ -506,12 +523,17 @@ observations.
 The retrieval of the ice water content (IWC) profiles from the computed observations is achieved in two
 steps.  In the first step, a class, out of 18 potential classes characterized by different 
 vertical distribution of IWC, is estimated from the observations. The 18 classes are predetermined based on
-k-Means clustering algorithm.  In the second step, the IWC profile is estimated using and Ensemble Kalman
+k-Means clustering algorithm.  In the second step, the IWC profile is estimated using an Ensemble Kalman
 Smoother (EKS) algorithm that uses the estimated class as a priori information.
 
 The results of the study show that the synergy of lidar, radar, and radiometer observations is significant
 in the retrieval of the IWC profiles.  The inclusion of the lidar observations in the retrieval process has a
-larger impact on the retrieval performance than the inclusion of the radar observations.  
+larger impact on the retrieval performance than the inclusion of the radar observations.  Although results are
+not directly comparable to those from other studies \citep{pfreundschuh2020synergistic,liu2022assessing}, given the differences
+between the instruments in this study relative to those from other studies, it may be concluded that they
+are not inconsistent with previous studies. Specifically, previous studies show some skills in radiometer-only
+retrievals and significant improvements in the retrieval performance when the active observations are incorporated.
+From this perspective, our findings are consistent with previous studies.
 
 Further work is necessary out to assess the impact of sources of uncertainties such as variability in the
 PSD intercept not captured by the current parameterization, differences in the instruments' footprint sizes,
@@ -572,6 +594,7 @@ The authors thank Dr. Lucia Tsaoussi (NASA Headquarters) for her support of this
 % 
 %
 \datastatement
+The CloudSat data can be accessed at: https://www.cloudsat.cira.colostate.edu/.
 %  The data availability statement is where authors should describe how the data underlying 
 %  the findings within the article can be accessed and reused. Authors should attempt to 
 %  provide unrestricted access to all data and materials underlying reported findings. 

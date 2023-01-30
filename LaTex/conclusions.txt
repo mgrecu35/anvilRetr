@@ -1,0 +1,39 @@
+In this study, we investigate the synergy of lidar, Ku-band radar, and sub-millimeter-wave radiometer
+measurements in the retrieval of the ice from satellite observations.  The synergy is analyzed through
+the generation of a large dataset of IWC profile and the calculation of lidar, radar and radiometer 
+observations using realistic models. The characteristics of the instruments (e.g. frequencies, sensitivities,
+etc.) are set based on the expected characteristics of instruments of the AOS mission. 
+A cross-validation methodology is used to assess the 
+accuracy of the retrieved IWC profiles from various combinations of observations from the three instruments.
+Specifically, the IWC and associated observations is randomly divided into two datasets, one for the 
+training and the other for the evaluation.  The training dataset is used to train the retrieval algorithm,
+while the evaluation dataset is used to assess the retrieval performance. 
+
+To ensure the self-consistency of results and their relevance to practical applications, the dataset of IWC 
+profiles is derived from CloudSat reflectivity observations. Although subject to potential biases
+and uncertainties due to deficiencies in the retrieval models, these profiles are deemed to be more realistic
+than those derived from cloud resolving model simulations. Moreover, they are roughly consistent with
+the 2C-ICE CloudSat product \citep{deng2015}, while relying on assumptions and parameterizations that
+enable the accurate computation of backscatter lidar, Ku-band radar, and sub-millimiter-wave radiometer
+observations.
+
+The retrieval of the ice water content (IWC) profiles from the computed observations is achieved in two
+steps.  In the first step, a class, out of 18 potential classes characterized by different 
+vertical distribution of IWC, is estimated from the observations. The 18 classes are predetermined based on
+k-Means clustering algorithm.  In the second step, the IWC profile is estimated using and Ensemble Kalman
+Smoother (EKS) algorithm that uses the estimated class as a priori information.
+
+The results of the study show that the synergy of lidar, radar, and radiometer observations is significant
+in the retrieval of the IWC profiles.  The inclusion of the lidar observations in the retrieval process has a
+larger impact on the retrieval performance than the inclusion of the radar observations.  Although results are
+not directly comparable to those from other studies, given the differences
+between the instruments in this study relative to those from other studies, it may be concluded that they
+are not inconsistent with previous studies. Specifically, previous studies show some skills in radiometer-only
+retrievals and significant improvements in the retrieval performance when the active observations are incorporated.
+From this perspective, our findings are consistent with previous studies.
+
+Further work is necessary out to assess the impact of sources of uncertainties such as variability in the
+PSD intercept not captured by the current parameterization, differences in the instruments' footprint sizes,
+and non-uniform beam filling on the retrievals of the IWC profiles.  Other sources of uncertainties that
+need be considered include the potential existence of supercooled liquid water in the clouds and uncertainties
+in the electromagnetic scattering properties used in the in instruments' forward models.

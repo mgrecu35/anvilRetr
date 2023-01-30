@@ -1,4 +1,4 @@
-\begin{thebibliography}{5}
+\begin{thebibliography}{28}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \renewcommand{\UrlFont}{\rmfamily}
@@ -13,10 +13,50 @@
 Abadi, M., and Coauthors, 2016: Tensorflow: a system for large-scale machine
   learning. \textit{Osdi}, Savannah, GA, USA, Vol.~16, 265--283.
 
+\bibitem[{Bodas-Salcedo et~al.(2011)}]{bodas2011cosp}
+Bodas-Salcedo, A., and Coauthors, 2011: Cosp: Satellite simulation software for
+  model assessment. \textit{Bulletin of the American Meteorological Society},
+  \textbf{92~(8)}, 1023--1043.
+
+\bibitem[{Bringi et~al.(2003)Bringi, Chandrasekar, Hubbert, Gorgucci, Randeu,,
+  and Schoenhuber}]{bringi2003}
+Bringi, V., V.~Chandrasekar, J.~Hubbert, E.~Gorgucci, W.~Randeu, and
+  M.~Schoenhuber, 2003: Raindrop size distribution in different climatic
+  regimes from disdrometer and dual-polarized radar analysis. \textit{Journal
+  of the atmospheric sciences}, \textbf{60~(2)}, 354--365.
+
+\bibitem[{Brogniez et~al.(2022)}]{brogniez2022time}
+Brogniez, H., and Coauthors, 2022: Time-delayed tandem microwave observations
+  of tropical deep convection: Overview of the c 2 omodo mission.
+  \textit{Frontiers in Remote Sensing}, \textbf{3}, 854\,735.
+
+\bibitem[{Brown and Francis(1995)Brown, and Francis}]{brown1995improved}
+Brown, P.~R., and P.~N. Francis, 1995: Improved measurements of the ice water
+  content in cirrus using a total-water probe. \textit{Journal of Atmospheric
+  and Oceanic Technology}, \textbf{12~(2)}, 410--414.
+
+\bibitem[{Delano{\"e} and Hogan(2008)Delano{\"e}, and
+  Hogan}]{delanoe2008variational}
+Delano{\"e}, J., and R.~J. Hogan, 2008: A variational scheme for retrieving ice
+  cloud properties from combined radar, lidar, and infrared radiometer.
+  \textit{Journal of Geophysical Research: Atmospheres}, \textbf{113~(D7)}.
+
 \bibitem[{Deng et~al.(2015)Deng, Mace, Wang,, and Berry}]{deng2015}
 Deng, M., G.~G. Mace, Z.~Wang, and E.~Berry, 2015: Cloudsat 2c-ice product
   update with a new ze parameterization in lidar-only region. \textit{Journal
   of Geophysical Research: Atmospheres}, \textbf{120~(23)}, 12--198.
+
+\bibitem[{Deng et~al.(2013)Deng, Mace, Wang,, and Lawson}]{deng2013evaluation}
+Deng, M., G.~G. Mace, Z.~Wang, and R.~P. Lawson, 2013: Evaluation of several
+  a-train ice cloud retrieval products with in situ measurements collected
+  during the sparticus campaign. \textit{Journal of applied meteorology and
+  climatology}, \textbf{52~(4)}, 1014--1030.
+
+\bibitem[{Deng et~al.(2010)Deng, Mace, Wang,, and Okamoto}]{deng2010tropical}
+Deng, M., G.~G. Mace, Z.~Wang, and H.~Okamoto, 2010: Tropical composition,
+  cloud and climate coupling experiment validation for cirrus cloud profiling
+  retrieval using cloudsat radar and calipso lidar. \textit{Journal of
+  Geophysical Research: Atmospheres}, \textbf{115~(D10)}.
 
 \bibitem[{Goodfellow et~al.(2016)Goodfellow, Bengio,, and
   Courville}]{deepL2016}
@@ -30,8 +70,100 @@ Grecu, M., L.~Tian, G.~M. Heymsfield, A.~Tokay, W.~S. Olson, A.~J. Heymsfield,
   ice from multiple-frequency radar reflectivity observations. \textit{Journal
   of Applied Meteorology and Climatology}, \textbf{57~(11)}, 2605--2622.
 
+\bibitem[{Grecu et~al.(2011)Grecu, Tian, Olson,, and Tanelli}]{grecu2011}
+Grecu, M., L.~Tian, W.~S. Olson, and S.~Tanelli, 2011: A robust dual-frequency
+  radar profiling algorithm. \textit{Journal of applied meteorology and
+  climatology}, \textbf{50~(7)}, 1543--1557.
+
+\bibitem[{Heymsfield et~al.(2022)Heymsfield, Bansemer, Heymsfield, Noone,
+  Grecu,, and Toohey}]{heymsfield2022impacts}
+Heymsfield, A., A.~Bansemer, G.~Heymsfield, D.~Noone, M.~Grecu, and D.~Toohey,
+  2022: Relationship of multiwavelength radar measurements to ice microphysics
+  from the impacts field program. \textit{Journal of Applied Meteorology and
+  Climatology}.
+
+\bibitem[{Hogan(2019)}]{scatter-1.1}
+Hogan, R.~J., 2019: scatter-1.1.
+  \urlprefix\url{http://www.met.reading.ac.uk/clouds/ssrga/scatter-1.1.tar.gz}.
+
+\bibitem[{Hogan and Battaglia(2008)Hogan, and Battaglia}]{hogan2008lidar_ms}
+Hogan, R.~J., and A.~Battaglia, 2008: Fast lidar and radar multiple-scattering
+  models. part ii: Wide-angle scattering using the time-dependent two-stream
+  approximation. \textit{Journal of the Atmospheric Sciences},
+  \textbf{65~(12)}, 3636--3651.
+
+\bibitem[{Hogan et~al.(2017)Hogan, Honeyager, Tyynel{\"a},, and
+  Kneifel}]{hogan2017ssrga}
+Hogan, R.~J., R.~Honeyager, J.~Tyynel{\"a}, and S.~Kneifel, 2017: Calculating
+  the millimetre-wave scattering phase function of snowflakes using the
+  self-similar rayleigh--gans approximation. \textit{Quarterly Journal of the
+  Royal Meteorological Society}, \textbf{143~(703)}, 834--844.
+
+\bibitem[{Hogan et~al.(2006)Hogan, Mittermaier,, and
+  Illingworth}]{hogan2006retrieval}
+Hogan, R.~J., M.~P. Mittermaier, and A.~J. Illingworth, 2006: The retrieval of
+  ice water content from radar reflectivity factor and temperature and its use
+  in evaluating a mesoscale model. \textit{Journal of Applied Meteorology and
+  Climatology}, \textbf{45~(2)}, 301--317.
+
+\bibitem[{Joseph et~al.(1976)Joseph, Wiscombe,, and Weinman}]{joseph1976delta}
+Joseph, J.~H., W.~Wiscombe, and J.~Weinman, 1976: The delta-eddington
+  approximation for radiative flux transfer. \textit{Journal of Atmospheric
+  Sciences}, \textbf{33~(12)}, 2452--2459.
+
+\bibitem[{Kummerow(1993)}]{kummerow1993edd}
+Kummerow, C., 1993: On the accuracy of the eddington approximation for
+  radiative transfer in the microwave frequencies. \textit{Journal of
+  Geophysical Research: Atmospheres}, \textbf{98~(D2)}, 2757--2765.
+
+\bibitem[{Liu et~al.(1996)Liu, Simmer,, and Ruprecht}]{liu1996three}
+Liu, Q., C.~Simmer, and E.~Ruprecht, 1996: Three-dimensional radiative transfer
+  effects of clouds in the microwave spectral range. \textit{Journal of
+  Geophysical Research: Atmospheres}, \textbf{101~(D2)}, 4289--4298.
+
+\bibitem[{Liu and Mace(2022)Liu, and Mace}]{liu2022assessing}
+Liu, Y., and G.~G. Mace, 2022: Assessing synergistic radar and radiometer
+  capability in retrieving ice cloud microphysics based on hybrid bayesian
+  algorithms. \textit{Atmospheric Measurement Techniques}, \textbf{15~(4)},
+  927--944.
+
 \bibitem[{MacKay(2003)}]{mackay2003information}
 MacKay, D.~J., 2003: \textit{Information theory, inference and learning
   algorithms}. Cambridge university press.
+
+\bibitem[{Pfreundschuh et~al.(2020)Pfreundschuh, Eriksson, Buehler, Brath,
+  Duncan, Larsson,, and Ekelund}]{pfreundschuh2020synergistic}
+Pfreundschuh, S., P.~Eriksson, S.~A. Buehler, M.~Brath, D.~Duncan, R.~Larsson,
+  and R.~Ekelund, 2020: Synergistic radar and radiometer retrievals of ice
+  hydrometeors. \textit{Atmospheric Measurement Techniques}, \textbf{13~(8)},
+  4219--4245.
+
+\bibitem[{Rodgers(2000)}]{rodgers2000inverse}
+Rodgers, C.~D., 2000: \textit{Inverse methods for atmospheric sounding: theory
+  and practice}, Vol.~2. World scientific.
+
+\bibitem[{Rosenkranz(1998)}]{rosenkranz1998}
+Rosenkranz, P.~W., 1998: Water vapor microwave continuum absorption: A
+  comparison of measurements and models. \textit{Radio Science},
+  \textbf{33~(4)}, 919--928.
+
+\bibitem[{Stephens et~al.(2002)}]{stephens2002}
+Stephens, G.~L., and Coauthors, 2002: The cloudsat mission and the a-train: A
+  new dimension of space-based observations of clouds and precipitation.
+  \textit{Bulletin of the American Meteorological Society}, \textbf{83~(12)},
+  1771--1790.
+
+\bibitem[{Testud et~al.(2001)Testud, Oury, Black, Amayenc,, and
+  Dou}]{testud2001}
+Testud, J., S.~Oury, R.~A. Black, P.~Amayenc, and X.~Dou, 2001: The concept of
+  “normalized” distribution to describe raindrop spectra: A tool for cloud
+  physics and cloud remote sensing. \textit{Journal of Applied Meteorology and
+  Climatology}, \textbf{40~(6)}, 1118--1140.
+
+\bibitem[{Wagner and Delene(2022)Wagner, and Delene}]{wagner_delene2022}
+Wagner, S.~W., and D.~J. Delene, 2022: Technique for comparison of backscatter
+  coefficients derived from in situ cloud probe measurements with concurrent
+  airborne lidar. \textit{Atmospheric Measurement Techniques},
+  \textbf{15~(21)}, 6447--6466.
 
 \end{thebibliography}
