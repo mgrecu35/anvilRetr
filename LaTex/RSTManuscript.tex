@@ -21,7 +21,7 @@
 
 %% May use \\ to break lines in title:
 
-\title{Synergistic retrievals of ice in high clouds from lidar, 
+\title{Synergistic retrievals of ice in high clouds from elastic backscatter lidar, 
 Ku-band radar and submillimeter wave radiometer observations}
 
 %% Enter authors' names
@@ -54,7 +54,7 @@ Ku-band radar and submillimeter wave radiometer observations}
 %}
 
 \authors{Mircea Grecu\aff{a,b}\correspondingauthor{Mircea Grecu, mircea.grecu-1@nasa.gov}
-and John Yorks \aff{a}}
+and John E. Yorks \aff{a}}
 \affiliation{\aff{a}{NASA GSFC}\\
 \aff{b}{Morgan State University}}
 
@@ -65,7 +65,7 @@ and John Yorks \aff{a}}
 % Abstracts should not exceed 250 words in length!
 %
  
-\abstract{ In this study, we investigate the synergy of lidar, Ku-band radar, and sub-millimeter-wave radiometer measurements
+\abstract{ In this study, we investigate the synergy of elastic backscatter lidar, Ku-band radar, and sub-millimeter-wave radiometer measurements
 in the retrieval of the ice from satellite observations. The synergy is analyzed through the generation of a large dataset 
 of IWC profile and simulated lidar, radar and radiometer observations. 
 The characteristics of the instruments e. g. frequencies, sensitivities, etc. are set based on the expected characteristics 
@@ -80,8 +80,12 @@ is estimated from the observations. The 18 classes are predetermined based on k-
 In the second step, the IWC profile is estimated using a Ensemble Kalman Smoother (EKS) algorithm that uses the 
 estimated class as a priori information.\\
 The results of the study show that the synergy of lidar, radar, and radiometer observations is significant
-in the retrieval of the IWC profiles.  The inclusion of the lidar observations in the retrieval process has a
-larger impact on the retrieval performance than the inclusion of the radar observations.}
+in the retrieval of the IWC profiles.  The inclusion of the lidar backscatter observations in the retrieval process has a
+larger impact on the retrieval performance than the inclusion of the radar observations. 
+As ice clouds have a significant impact on atmospheric radiative processes, this
+work is relevant to ongoing efforts to reduce uncertainties in climate analyses and projections.}
+
+
 
 \begin{document}
 
@@ -123,20 +127,25 @@ larger impact on the retrieval performance than the inclusion of the radar obser
 \section{Introduction}
 The future NASA Atmospheric Observing System (AOS) mission (Braun 2022) is expected to feature new 
 combinations of observations that may be used to quantify the amounts of ice in high clouds and 
-characterize the microphysical properties of ice particles. These observations include lidar backscatter,
-Ku-band radar reflectivity, and submillimeter wave radiometer brightness temperature measurements.  
-While not optimal for cloud ice estimation, but for the characterization of a broader spectrum of 
-cloud and precipitation processes, these observations are nevertheless synergistic from the 
-characterization of ice clouds perspective. That is, despite the fact that lidar observations 
+characterize the microphysical properties of ice particles. These observations include backscatter
+from an elastic backscatter lidar \citep{weitkamp2006},
+Ku-band radar reflectivity, and submillimeter wave radiometer brightness temperature measurements. 
+The AOS mission design, while not necessarily optimal for cloud ice estimation, enables characterization 
+of the broader spectrum of cloud and precipitation processes. Nevertheless, these measurements are 
+complimentary for synergistic characterization of ice clouds. 
+%While not optimal for cloud ice estimation, but for the characterization of a broader spectrum of 
+%cloud and precipitation processes, these observations are nevertheless synergistic from the 
+%characterization of ice clouds perspective. 
+That is, despite the fact that lidar observations 
 attenuate quickly in thick ice clouds and the Ku-band radar will not be able to detect clouds 
 characterized by an echo weaker than 8.0 dBZ, the active observations are expected to provide context 
-that may be incorporated into the radiometer retrievals. Herein, term retrieval is defined as the 
+that may be incorporated into the radiometer retrievals. Herein, the term retrieval is defined as the 
 process of estimating geophysical variables from remote sensing observations.
-%, but, as customary in the scientific5
+%, but, as customary in the scientific
 %literature, estimates are occasionally referred to as retrievals as well.  
 In this study, we investigate the impact of 
 incorporating lidar and radar observations into the radiometer retrieval of ice clouds.
-Because the existent amount of coincident backscatter lidar, Ku-band radar, and submillimeter-wave 
+Because the existing amount of coincident backscatter lidar, Ku-band radar, and submillimeter-wave 
 radiometer observations is rather insufficient to derive conclusive results, we employ accurate 
 physical models to simulate lidar, radar and radiometer observations and use a cross-validation 
 methodology to characterize the retrieval accuracy. As estimates from passive instrument 
@@ -203,10 +212,12 @@ outcome is not likely to be sensitive to such details.
 \begin{figure}[t]
     \centering
     \includegraphics[width=0.75\textwidth,angle=0]{./Figs/fig01.png}\\
-    \caption{Mean CS IWC profiles for 18 classes derived using the k-Means clustering algorithm. Associated 
-    mean profiles derived from CS reflectivity observations derived using SSRGA scattering calculations 
+    \caption{Mean CS IWC profiles for 18 classes derived using the k-Means clustering algorithm. For a 
+    compressed but intelligible representation, three classes are shown in different colors in each panel.
+    The associated 
+    mean profiles derived from CS reflectivity observations using the SSRGA scattering calculations 
     and $N_w$ parameterization developed in this study are shown using symbol *. The vertical coordinate 
-    is defined relative to the freezing level}\label{f1}
+    is defined relative to the freezing level.}\label{f1}
 \end{figure}
 One may notice that the average IWC profiles in Figure 1 are characterized by different peak values and heights. 
 This facilitates a simple way to reverse-engineer to (some extent) the "a priori" assumptions used in the CS 
@@ -227,7 +238,8 @@ function of the relative height.
 \begin{figure}[t]
     \centering
     \includegraphics[width=0.75\textwidth,angle=0]{./Figs/fig02.png}\\
-    \caption{}\label{f2}
+    \caption{Multiplicative factor in the 2ICE IWC-relation as a function of the IWC profile
+    peak height.}\label{f2}
 \end{figure}
 
 For the determination of reference $a$ and $b$ values to be used with Equation (\ref{eq:1}), we assume that 
@@ -249,7 +261,7 @@ realistic ice particle shapes exist, they are rather incomplete and not readily 
  compared lidar backscatter observations with backscatter calculations based on coincident PSD 
 observations and the Mie solution and found good agreement, which suggests that electromagnetic properties 
 derived from Mie calculations are adequate for practical applications. The lidar molecular backscatter and 
-extinction are calculated using the lidar module of the CFMIP Observation Simulator Package 
+extinction are calculated at 532 nm using the lidar module of the CFMIP Observation Simulator Package 
 (COSP; \cite{bodas2011cosp}).  To account for multiple-scattering in the lidar observations, we are using 
 the multiscatter-1.2.11 model (Hogan 2015) of \cite{hogan2008lidar_ms}.  Shown in Figure 3 are the
 distributions of simulated Ku-band radar reflectivity and lidar bacscatter as function of height above 
@@ -258,9 +270,9 @@ the freezing level.
 \begin{figure}[t]
     \centering
     \includegraphics[width=0.75\textwidth,angle=0]{./Figs/fig03.png}\\
-    \caption{Simulated distributions of Ku-band radar reflectivity (left) and lidar bacscatter (right)
+    \caption{Simulated distributions of Ku-band radar reflectivity (left) and lidar backscatter (right)
     as function of height above 
-    the freezing level}\label{f3}
+    the freezing level.}\label{f3}
 \end{figure}
 
 The radiometer observations are calculated using a one-dimensional efficient, but accurate, radiative transfer 
@@ -386,7 +398,7 @@ in this study, as the lidar observations may be used to discriminate between cle
     \centering
     \includegraphics[width=0.75\textwidth,angle=0]{./Figs/fig04.png}\\
     \caption{Frequency plot of estimated IWP derived radiometer-observations as a function of the 
-    true IWP used in observations synthesis}\label{f4}
+    true IWP used in observations synthesis.}\label{f4}
 \end{figure}
 Although the radiometer-only estimation procedure is able to estimate the integrated amount of ice in clouds fairly
 wells, its ability to characterize the vertical distribution of ice in clouds is limited.  Figure \ref{f5} shows the
@@ -419,11 +431,11 @@ radiometer-only observations.
 
 \subsection{Synergistic retrievals}
 
-The synergy of the instrument on the estimates may be investigating by simply incorporating lidar 
+The synergy of the instrument on the estimates may be investigated by simply incorporating lidar 
 and radar observations
 into the retrieval process and comparing the results with the radiometer-only estimates.  Although
 the lidar observations are subject to attenuation, they are able to provide information about the vertical
-distribution of ice in clouds, especially at the top of the clouds.  The radar observations, on the other hand,
+distribution of ice in clouds, mostly at the top of the clouds.  The radar observations, on the other hand,
 are able to provide information in the bottom part of the clouds, where the lidar signal is below the noise
 level due to attenuation. Therefore, the combined used of lidar and radar observations is expected to 
 provide a more complete characterization of the vertical distribution of ice in clouds and enable the
