@@ -1,0 +1,106 @@
+\documentclass{article}
+\usepackage{fullpage}
+% use package for figures
+\usepackage{graphicx}
+%\renewcommand{\baselinestretch}{2}
+\author{Mircea Grecu (Morgan State University), David Bolvin (SSAI) and \\George Huffman (NASA/GSFC)}
+\title{Final Progress Report Grant 80NSSC19K0674\\ 
+"Improved detection and quantification of precipitation by the TRMM/GPM combined algorithm"}
+\date{}
+\begin{document}
+\maketitle
+
+%\tableofcontents
+%80NSSC22K0598
+\section{Project description}
+Ground clutter is signal in the radar observations caused by the ground. It may cause uncertainties 
+in the radar precipitation estimates by obscuring precipitation signal.  
+Ground clutter induced uncertainties tend to be large for shallow or low freezing-level precipitation 
+systems in the off-nadir regions of the radar swath. This is because such systems are characterized by
+large variations in the precipitation intensity with range, and simple schemes to estimate the surface
+precipitation from observations not affected by ground clutter are usually not adequate. In this project,
+we developed a methodology to mitigate the negative impact of  ground clutter on the detection 
+and quantification of surface precipitation from both TRMM and GPM radar observations.  
+The methodology is based on the fact that ground clutter is a function of the radar incidence angle,
+i.e. it is a minimum at nadir and drastically increases with the viewing angle.  From an instantaneous and 
+climatological perspective, it is necessary to accurately estimate precipitation at all radar 
+viewing angles. We, therefore, developed a methodology to mitigate ground clutter issues using a 
+comprehensive database of GPM near-nadir radar observations, minimally contaminated by ground 
+clutter, matched with coincident GMI observations.  For a given off-nadir radar reflectivity 
+profile, the database is used to identify records characterized by similar surface conditions
+and precipitation type to reconstruct the information obscured by the ground clutter in the 
+off-nadir profile.
+
+\section{Final Progress Report}
+% include figure
+Shown in the left panel of Figure \ref{fig:fig1} is a cross-section through an observed reflectivity field at 
+Ku-band (left panel). As apparent in the figure, the reflectivity field is increasingly contaminated 
+by ground clutter (which results in much stronger echo than that usually associated with precipitation)
+with increasing viewing angle. In the absence of more complete information, one may assume that
+the precipitation rate is constant with height, and set the precipitation rate at the 
+surface equal to that at the lowest clutter-free bin. However, this assumption is generally 
+not valid and tends to lead to significant biases in the surface precipitation estimates.
+The left sub-panel of the right panel of Figure \ref{fig:fig1} shows the average stratiform 
+precipitation profiles over oceans stratified by the freezing level bin. As apparent in the figure,
+the precipitation rate increases with range bin. A representation of the average stratiform precipitation
+profiles as a function of the range relative to the freezing level bin and normalized by the
+freezing level rate is also shown in the 
+right panel of Figure \ref{fig:fig1}. This representation removes most of the variability apparent in the
+absolute range bin representation and makes the different freezing level bins almost indistinguishable.
+\begin{figure}[h]
+\centering
+\begin{tabular}{cc}
+\includegraphics[width=0.485\textwidth]{./clutterCrossSect.png}&
+\includegraphics[width=0.5\textwidth]{./stratProfiles.png}
+\end{tabular}
+\caption{Cross-section through observed reflectivity field at Ku-band (left panel) and average
+stratiform precipitation profiles over oceans (right panel).}
+\label{fig:fig1}
+\end{figure}
+Given the well-defined and robust variation of the precipitation rate with range, a simple, but
+effective, method to mitigate the biases in the surface precipitation estimates may be formulated
+by simply scaling the normalized precipitation rate profile to match the precipitation rate at the
+lowest clutter-free bin and use the resulting profile to fill-in the values at longer ranges. 
+Mathematically, this may be expressed as
+\begin{equation}
+    PrecipRate(Z<ZCF)=PrecipRate(ZCF) NCM(Z)/NCM(ZCF) 
+\label{eq:eq1}
+\end{equation}
+where $Z$ is the height, $ZCF$ is the height of the lowest clutter-free bin, and
+$NCM(Z)$ is the normalized conditional precipitation profile.
+
+Equation \ref{eq:eq1} is applied conditionally on the surface and precipitation type with
+different normalized average precipitation profiles being used for different surface conditions
+and precipitation types. Its global implementation and application to the GPM Ku-band radar 
+observations resulted in:
+\begin{itemize}
+\item More precipitation at the surface over oceans. The impact is more pronounced at higher 
+latitudes because the freezing level is lower and the precipitation rate increases with range
+is more pronounced above the freezing level.
+\item Less precipitation at the surface over land in the tropics and sub-tropics. This is because
+the precipitation rate tends to decrease with range below the freezing level due to evaporative
+processes.  This is also the case at mid-latitudes in the summer.
+\item More precipitation at the surface over land in the mid-latitudes in the winter. This is because
+the precipitation rate tends to increase with range due to the fact that the lowest-clutter free
+bin is usually above the freezing level and there are no significant evaporative process 
+to reduce the precipitation rate.
+
+\end{itemize}
+\begin{itemize}
+\item The DPR does not miss all the light precipitation associated with a given point in the 
+Tb-space.
+\item An empirical algorithm may be derived from collocated Tbs and DPR retrievals.
+\item The empirical algorithm is to be applied only when the DPR does not detect precipitation. 
+When estimates are greater than 0, a decision is required.
+\end{itemize}
+\begin{figure}[h]
+    \centering
+    \begin{tabular}{cc}
+    \includegraphics[width=0.46\textwidth]{./highLatCMB.png}&
+    \includegraphics[width=0.45\textwidth]{./highLatCMB_NN.png}
+    \end{tabular}
+    \caption{}
+    \label{fig:fig1}
+    \end{figure}
+
+\end{document}
